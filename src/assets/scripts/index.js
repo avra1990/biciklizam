@@ -1,4 +1,3 @@
-import PopperJs from 'popper.js';
 import jquery from 'jquery';
 
 require('../styles/index.scss');
