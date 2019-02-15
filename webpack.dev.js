@@ -6,10 +6,10 @@ module.exports = {
   devtool: 'eval-cheap-module-source-map',
   entry: './src/assets/scripts/index.js',
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'dist')
   },
   node: {
-    fs: 'empty',
+    fs: 'empty'
   },
   module: {
     rules: [
@@ -18,8 +18,8 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['env'],
-        },
+          presets: ['env']
+        }
       },
       {
         test: /\.(scss|css)$/,
@@ -28,15 +28,15 @@ module.exports = {
             // creates style nodes from JS strings
             loader: 'style-loader',
             options: {
-              sourceMap: true,
-            },
+              sourceMap: true
+            }
           },
           {
             // translates CSS into CommonJS
             loader: 'css-loader',
             options: {
-              sourceMap: true,
-            },
+              sourceMap: true
+            }
           },
           {
             // compiles Sass to CSS
@@ -44,11 +44,11 @@ module.exports = {
             options: {
               outputStyle: 'expanded',
               sourceMap: true,
-              sourceMapContents: true,
-            },
-          },
+              sourceMapContents: true
+            }
+          }
           // Please note we are not running postcss here
-        ],
+        ]
       },
       {
         // Load all images as base64 encoding if they are smaller than 8192 bytes
@@ -59,17 +59,17 @@ module.exports = {
             options: {
               // On development we want to see where the file is coming from, hence we preserve the [path]
               name: '[path][name].[ext]?hash=[hash:20]',
-              limit: 8192,
-            },
-          },
-        ],
-      },
-    ],
+              limit: 8192
+            }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
-      inject: true,
-    }),
-  ],
+      inject: true
+    })
+  ]
 };

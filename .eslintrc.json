@@ -1,19 +1,27 @@
 {
-  "extends": "airbnb-base",
+  "extends": ["airbnb-base", "prettier"],
   "parser": "babel-eslint",
+  "plugins": ["prettier"],
   "env": {
     "browser": true,
     "es6": true
   },
   "rules": {
+    "prettier/prettier": "error",
     "indent": ["error", 2],
     "quotes": ["warn", "single"],
     "semi": ["error", "always"],
     "no-debugger": 0,
     "space-before-function-paren": "warn",
     "space-before-blocks": "warn",
-    "no-unused-vars": ["warn"],
-    "no-console": "warn",
-    "max-len": ["off"]
+    "no-unused-vars": ["error"],
+    "no-console": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./webpack.dev.js"
+      }
+    }
   }
 }

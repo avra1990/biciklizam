@@ -14,10 +14,10 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: '[name].[hash:20].js',
-    path: buildPath,
+    path: buildPath
   },
   node: {
-    fs: 'empty',
+    fs: 'empty'
   },
   module: {
     rules: [
@@ -27,28 +27,28 @@ module.exports = {
         loader: 'babel-loader',
 
         options: {
-          presets: ['env'],
-        },
+          presets: ['env']
+        }
       },
       {
         test: /\.(scss|css|sass)$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: MiniCssExtractPlugin.loader
           },
           {
             // translates CSS into CommonJS
             loader: 'css-loader',
             options: {
-              sourceMap: true,
-            },
+              sourceMap: true
+            }
           },
           {
             // Runs compiled CSS through postcss for vendor prefixing
             loader: 'postcss-loader',
             options: {
-              sourceMap: true,
-            },
+              sourceMap: true
+            }
           },
           {
             // compiles Sass to CSS
@@ -56,10 +56,10 @@ module.exports = {
             options: {
               outputStyle: 'expanded',
               sourceMap: true,
-              sourceMapContents: true,
-            },
-          },
-        ],
+              sourceMapContents: true
+            }
+          }
+        ]
       },
       {
         // Load all images as base64 encoding if they are smaller than 8192 bytes
@@ -69,18 +69,18 @@ module.exports = {
             loader: 'url-loader',
             options: {
               name: '[name].[hash:20].[ext]',
-              limit: 8192,
-            },
-          },
-        ],
-      },
-    ],
+              limit: 8192
+            }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
       // Inject the js bundle at the end of the body of the given template
-      inject: 'body',
+      inject: 'body'
     }),
     new CleanWebpackPlugin(buildPath),
     new FaviconsWebpackPlugin({
@@ -109,23 +109,23 @@ module.exports = {
         opengraph: false,
         twitter: false,
         yandex: false,
-        windows: false,
-      },
+        windows: false
+      }
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.[contenthash].css',
+      filename: 'styles.[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
       cssProcessor: cssNano,
       cssProcessorOptions: {
         map: {
-          inline: false,
+          inline: false
         },
         discardComments: {
-          removeAll: true,
-        },
+          removeAll: true
+        }
       },
-      canPrint: true,
-    }),
-  ],
+      canPrint: true
+    })
+  ]
 };
