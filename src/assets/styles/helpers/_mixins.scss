@@ -1,0 +1,62 @@
+// ----------------------------
+// Font mixin
+// ----------------------------
+@mixin main-font-style(
+  $weight: $font-weight-regular,
+  $size: $font-size-regular,
+  $style: normal,
+  $color: $color-text-dark
+) {
+  font-family: $font-family-main;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  color: $color;
+}
+// ----------------------------
+// Size mixin
+// ----------------------------
+@mixin size($width: $width, $height: $height) {
+  height: $height;
+  width: $width;
+}
+@mixin square($size) {
+  @include size($size, $size);
+}
+// ----------------------------
+// Positioning mixin
+// ----------------------------
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin absolute($args...) {
+  @include position(absolute, $args...);
+}
+@mixin relative($args...) {
+  @include position(relative, $args...);
+}
+@mixin fixed($args...) {
+  @include position(fixed, $args...);
+}
+// ----------------------------
+// Transition mixin
+// ----------------------------
+@mixin transition($speed: 0.25s, $prop: all) {
+  -webkit-transition: $prop $speed ease-in-out;
+  -moz-transition: $prop $speed ease-in-out;
+  -ms-transition: $prop $speed ease-in-out;
+  -o-transition: $prop $speed ease-in-out;
+  transition: $prop $speed ease-in-out;
+}
+// ----------------------------
+// Border-radius mixin
+// ----------------------------
+@mixin borderradius($radius: 4px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
