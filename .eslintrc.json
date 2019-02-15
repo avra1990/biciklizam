@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["warn", "single"],
+    "semi": ["error", "always"],
+    "no-debugger": 0,
+    "space-before-function-paren": "warn",
+    "space-before-blocks": "warn",
+    "no-unused-vars": ["warn"],
+    "no-console": "warn",
+    "max-len": ["off"]
+  }
+}
