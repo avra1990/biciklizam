@@ -11,7 +11,7 @@ const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
   devtool: 'source-map',
-  entry: './src/index.js',
+  entry: './src/assets/scripts/index.js',
   output: {
     filename: '[name].[hash:20].js',
     path: buildPath
@@ -83,35 +83,35 @@ module.exports = {
       inject: 'body'
     }),
     new CleanWebpackPlugin(buildPath),
-    new FaviconsWebpackPlugin({
-      // Your source logo
-      logo: './src/assets/icon.png',
-      // The prefix for all image files (might be a folder or a name)
-      prefix: 'icons-[hash]/',
-      // Generate a cache file with control hashes and
-      // don't rebuild the favicons until those hashes change
-      persistentCache: true,
-      // Inject the html into the html-webpack-plugin
-      inject: true,
-      // favicon background color (see https://github.com/haydenbleasel/favicons#usage)
-      background: '#fff',
-      // favicon app title (see https://github.com/haydenbleasel/favicons#usage)
-      title: 'biciklizam}}',
+    // new FaviconsWebpackPlugin({
+    //   // Your source logo
+    //   logo: './src/assets/icon.png',
+    //   // The prefix for all image files (might be a folder or a name)
+    //   prefix: 'icons-[hash]/',
+    //   // Generate a cache file with control hashes and
+    //   // don't rebuild the favicons until those hashes change
+    //   persistentCache: true,
+    //   // Inject the html into the html-webpack-plugin
+    //   inject: true,
+    //   // favicon background color (see https://github.com/haydenbleasel/favicons#usage)
+    //   background: '#fff',
+    //   // favicon app title (see https://github.com/haydenbleasel/favicons#usage)
+    //   title: 'biciklizam}}',
 
-      // which icons should be generated (see https://github.com/haydenbleasel/favicons#usage)
-      icons: {
-        android: true,
-        appleIcon: true,
-        appleStartup: true,
-        coast: false,
-        favicons: true,
-        firefox: true,
-        opengraph: false,
-        twitter: false,
-        yandex: false,
-        windows: false
-      }
-    }),
+    //   // which icons should be generated (see https://github.com/haydenbleasel/favicons#usage)
+    //   icons: {
+    //     android: true,
+    //     appleIcon: true,
+    //     appleStartup: true,
+    //     coast: false,
+    //     favicons: true,
+    //     firefox: true,
+    //     opengraph: false,
+    //     twitter: false,
+    //     yandex: false,
+    //     windows: false
+    //   }
+    // }),
     new MiniCssExtractPlugin({
       filename: 'styles.[contenthash].css'
     }),
