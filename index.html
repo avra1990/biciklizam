@@ -3,52 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>biciklizam</title>
+    <title>Bicikleto</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700"
       rel="stylesheet"
     />
-    <!-- <style>
-      h1 {
-        background-color: aquamarine;
-        height: 1.2cm; /* <-- ovo nemoj ni u ludilu da koristis, koristis za pocetak px idealno bi bilo rem ali za pocetak koristi px*/
-      }
-      h2 {
-        font-style: italic;
-        height: 0.8cm;
-        background-color: aqua;
-      }
-
+    <style>
       nav {
-        height: 1cm;
+        height: 100px;
         width: 100%;
         background-color: mediumaquamarine;
       }
-
-      button {
-        height: 1cm;
-        color: brown;
-        background-position-x: right;
-        scroll-padding-right: initial;
-        list-style-position: unset;
-      }
-    </style> -->
+    </style>
   </head>
   <body>
-    <!-- Kao sto rekoh vec vise puta, koristi bootstrap -->
-    <!-- <header>
-      <h1>BICIKLETO</h1>
-      <h2>'Nauci da vozis bicikl,neces zazaliti dok si ziv' Mark Twain</h2>
-    </header>
-    <nav id="nav1ID">
-      <button id="butt1ID" onclick="strana_1()">O nama</button>
-      <button id="butt2ID">Rekreacija</button>
-      <button id="butt3ID">Ture</button>
-      <button id="butt4ID">Forum</button>
-      <button id="butt5ID" onclick="myFunction()">Kontakt</button>
-    </nav> -->
-
-    <!-- Kao npr  -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
       <a class="navbar-brand" href="#">Bicikleto</a>
       <button
@@ -65,7 +33,9 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">O nama <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" onclick="strana_1()"
+              >O nama <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
@@ -76,26 +46,14 @@
             <a class="nav-link" href="#">Ture</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="myFunction()">Kontakt</a>
+            <a class="nav-link" href="#">Kontakt</a>
           </li>
         </ul>
       </div>
     </nav>
     <div style="height: 100000px">
-      <!-- i nikako inline style  -->
-      <p style="margin-top: 150px; padding:0 50px">
-        Mozemo da radimo i na tvom branchu, sto se mene tice, sve mi je jedno. Kad preuzmes promene,
-        prvo uradi npm install pa npm run build pa npm start ovde ti je sve ukljuceno, na tebi je
-        samo da prelistas Bootstrap dokumentaciju, da naucis osnovne git komande pa cemo dalje da
-        radimo
-      </p>
+      <p style="margin-top: 250px; padding:150px"></p>
     </div>
-    <!-- <script>
-      function strana_1() {
-        let tekst =
-          'Sajt Bicikleto.rs je namenjen pre svega biciklistima rekrativcima,ljubiteljima sporta i rekreacije.Dogovstine,avanture i druzenja medju biciklistima,ce nam biti u prvom planu.';
-        document.getElementById('nav1ID').innerHTML = tekst;
-      }
-    </script> -->
+    <script></script>
   </body>
 </html>
