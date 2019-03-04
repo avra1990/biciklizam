@@ -3,6 +3,4 @@ function strana_1() {
   document.getElementById('onamaID').innerHTML = tekst;
 }
 
-window.strana_1 = function() {
-  strana_1();
-};
+export { strana_1 };

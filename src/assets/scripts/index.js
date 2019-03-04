@@ -1,5 +1,6 @@
 import jquery from 'jquery';
 import { toggleShrink, myClick } from './nav';
+import { strana_1 } from './klase';
 
 require('../styles/index.scss');
 
@@ -15,4 +16,6 @@ window.myClick = function() {
   myClick();
 };
 
-
+window.strana_1 = function() {
+  strana_1();
+};
