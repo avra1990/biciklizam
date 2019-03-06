@@ -1,5 +1,5 @@
 function strana_1() {
-  const tekst = 'Bicikleto.';
+  const tekst = 'aaaaaaaaaaaaaaaaaaaaaaaaaaa';
   document.getElementById('onamaID').innerHTML = tekst;
 }
 
