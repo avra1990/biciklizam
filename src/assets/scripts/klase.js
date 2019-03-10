@@ -1,6 +1,3 @@
-function strana_1() {
-  const tekst = 'aaaaaaaaaaaaaaaaaaaaaaaaaaa';
-  document.getElementById('onamaID').innerHTML = tekst;
-}
+function strana_1() {}
 
 export { strana_1 };
