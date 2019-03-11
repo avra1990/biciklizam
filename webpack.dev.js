@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -70,6 +71,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       inject: true
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default']
     })
   ]
 };

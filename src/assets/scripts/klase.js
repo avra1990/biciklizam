@@ -1,4 +1,6 @@
-<script type="text/javascript" src="https://slideshow.triptracker.net/slide.js" />;
+{
+  /* <script type="text/javascript" src="https://slideshow.triptracker.net/slide.js" />; */
+}
 
 function gallery() {
   var viever = document.getElementById('galleryID');
