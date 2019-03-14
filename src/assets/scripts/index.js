@@ -1,11 +1,8 @@
 import 'bootstrap';
 import { toggleShrink, myClick } from './nav';
-import { gallery } from './klase';
-require(['./lightgallery.js'], function() {
-  require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
-      lightGallery(document.getElementById('lightgallery')); 
-  });
-});  
+import { carousel } from './carousel';
+
+require('webpack-icons-installer');
 
 require('../styles/index.scss');
 
@@ -17,6 +14,6 @@ window.myClick = function() {
   myClick();
 };
 
-window.gallery = function() {
-  gallery();
+window.carousel = function() {
+  carousel();
 };
