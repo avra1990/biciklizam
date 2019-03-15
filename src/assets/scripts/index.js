@@ -1,6 +1,8 @@
 import 'bootstrap';
 import { toggleShrink, myClick } from './nav';
 import { carousel } from './carousel';
+import {openModal, closeModal, dodajSlide, trenSlide, showSlide} from './gallery';
+
 
 require('webpack-icons-installer');
 
@@ -16,4 +18,24 @@ window.myClick = function() {
 
 window.carousel = function() {
   carousel();
+};
+
+window.openModal = function() {
+  openModal();
+};
+
+window.closeModal = function() {
+  closeModal();
+};
+
+window.dodajSlide = function() {
+  dodajSlide();
+};
+
+window.trenSlide = function() {
+  trenSlide();
+};
+
+window.showSlide = function() {
+  showSlide();
 };

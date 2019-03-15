@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <div class="row">
+      <div class="column">
+        <img src="slika1.jpg" onclick="openModal();trenSlide(1)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img src="slika2jpg.jpg" onclick="openModal();trenSlide(1)" class="hover-shadow" />
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">%times</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 2</div>
+            <img src="slika1_wide.jpg" style="width:100%" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 2</div>
+            <img src="slika2jpg_wide.jpg" style="width:100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="prev" onclick="dodajSlide(-1)">&#10094;</a>
+    <a class="next" onclick="dodajSlide(-1)">&#10095;</a>
+    <div class="caption-container">
+      <p id="container"></p>
+    </div>
+    <div class="column">
+      <img class="demo" src="slika1.jpg" onclick="trenSlide(1)" />
+    </div>
+    <div class="column">
+      <img class="demo" src="slika2.jpg" onclick="trenSlide(2)" />
+    </div>
+  </head>
+  <body></body>
+</html>
