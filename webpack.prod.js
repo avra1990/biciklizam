@@ -1,17 +1,23 @@
 const path = require('path');
 
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin'); // installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const cssNano = require('cssnano');
 
 const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
   devtool: 'source-map',
-  entry: './src/assets/scripts/index.js',
+  entry: {
+    index: './src/assets/scripts/index.js',
+    gallery: './src/assets/scripts/index.js',
+    o_nama: './src/assets/scripts/index.js',
+    saveti: './src/assets/scripts/index.js'
+  },
   output: {
     filename: '[name].[hash:20].js',
     path: buildPath
@@ -88,8 +94,27 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
-      // Inject the js bundle at the end of the body of the given template
-      inject: 'body'
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './gallery.html',
+      inject: 'body',
+      chunks: ['gallery'],
+      filename: 'gallery.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './o_nama.html',
+      inject: 'body',
+      chunks: ['o_nama'],
+      filename: 'o_nama.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './saveti.html',
+      inject: 'body',
+      chunks: ['saveti'],
+      filename: 'saveti.html'
     }),
     new CleanWebpackPlugin(buildPath),
     // new FaviconsWebpackPlugin({
@@ -136,5 +161,16 @@ module.exports = {
       },
       canPrint: true
     })
-  ]
+  ],
+
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true
+      }),
+      new OptimizeCssAssetsPlugin({})
+    ]
+  }
 };

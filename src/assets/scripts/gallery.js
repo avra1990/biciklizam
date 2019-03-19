@@ -1,5 +1,3 @@
-import { domainToASCII } from 'url';
-
 function openModal() {
   document.getElementById('myModal').style.display = 'block';
 }

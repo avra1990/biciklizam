@@ -5,7 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
-  entry: './src/assets/scripts/index.js',
+  entry: {
+    index: './src/assets/scripts/index.js',
+    gallery: './src/assets/scripts/index.js',
+    o_nama: './src/assets/scripts/index.js',
+    saveti: './src/assets/scripts/index.js'
+  },
   devServer: {
     contentBase: path.join(__dirname, 'dist')
   },
@@ -79,7 +84,27 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
-      inject: true
+      inject: true,
+      chunks: ['index'],
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './gallery.html',
+      inject: true,
+      chunks: ['gallery'],
+      filename: 'gallery.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './o_nama.html',
+      inject: true,
+      chunks: ['o_nama'],
+      filename: 'o_nama.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './saveti.html',
+      inject: true,
+      chunks: ['saveti'],
+      filename: 'saveti.html'
     }),
     /*
     new HtmlWebpackPlugin({
