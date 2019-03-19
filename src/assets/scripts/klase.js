@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 function gallery() {
   git;
   const viever = new PhotoViewer();
@@ -7,4 +5,3 @@ function gallery() {
   viever.add(biciklizam / slike / slika1.jpg);
 }
 export { gallery };
->>>>>>> Stashed changes

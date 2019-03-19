@@ -1,8 +1,7 @@
 import 'bootstrap';
 import { toggleShrink } from './nav';
 import { carousel } from './carousel';
-import {openModal, closeModal, dodajSlide, trenSlide, showSlide} from './gallery';
-
+import { openModal, closeModal, dodajSlide, trenSlide, showSlide } from './gallery';
 
 require('webpack-icons-installer');
 
