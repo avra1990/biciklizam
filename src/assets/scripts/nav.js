@@ -11,6 +11,6 @@ function toggleShrink() {
 
 function myClick() {
   alert('Sav js je u folderu assets/scripts/');
-};
+}
 
 export { toggleShrink, myClick };

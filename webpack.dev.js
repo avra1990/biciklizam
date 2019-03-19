@@ -81,6 +81,12 @@ module.exports = {
       template: './index.html',
       inject: true
     }),
+    /*
+    new HtmlWebpackPlugin({
+      template: './o_nama.html',
+      inject: true
+    }),
+    */
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',

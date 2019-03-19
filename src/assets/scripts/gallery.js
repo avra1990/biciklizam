@@ -41,4 +41,4 @@ function showSlide() {
   skrivenText.innerHTML = tacke[slideIndex - 1].alt;
 }
 
-export {openModal, closeModal, dodajSlide, trenSlide, showSlide};
+export { openModal, closeModal, dodajSlide, trenSlide, showSlide };
