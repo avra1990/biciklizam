@@ -106,12 +106,12 @@ module.exports = {
       chunks: ['saveti'],
       filename: 'saveti.html'
     }),
-    /*
     new HtmlWebpackPlugin({
-      template: './o_nama.html',
-      inject: true
+      template: './zanimljivosti.html',
+      inject: true,
+      chunks: ['zanimljivosti'],
+      filename: 'zanimljivosti.html'
     }),
-    */
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
