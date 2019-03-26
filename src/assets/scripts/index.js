@@ -1,12 +1,9 @@
 import 'bootstrap';
-import { toggleShrink } from './nav';
-import { carousel } from './carousel';
+import toggleShrink from './nav';
+import carousel from './carousel';
 import { openModal, closeModal, dodajSlide, trenSlide, showSlide } from './gallery';
-<<<<<<< Updated upstream
-=======
 
 import '../styles/index.scss';
->>>>>>> Stashed changes
 
 require('webpack-icons-installer');
 

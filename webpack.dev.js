@@ -9,7 +9,8 @@ module.exports = {
     index: './src/assets/scripts/index.js',
     gallery: './src/assets/scripts/index.js',
     o_nama: './src/assets/scripts/index.js',
-    saveti: './src/assets/scripts/index.js'
+    saveti: './src/assets/scripts/index.js',
+    zanimljivosti: './src/assets/scripts/index.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist')
@@ -61,7 +62,7 @@ module.exports = {
         test: /\.(png|jpg|gif)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
               // On development we want to see where the file is coming from, hence we preserve the [path]
               name: '[path][name].[ext]?hash=[hash:20]',

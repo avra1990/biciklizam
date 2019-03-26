@@ -5,7 +5,7 @@ class SiemaWithDots extends Siema {
     this.dots = document.createElement('div');
     this.dots.classList.add('dots');
 
-    for (let i = 0; i < this.innerElements.length; i++) {
+    for (let i = 0; i < this.innerElements.length; i += 1) {
       const dot = document.createElement('button');
       dot.classList.add('dots__item');
       dot.addEventListener('click', () => {
@@ -17,7 +17,7 @@ class SiemaWithDots extends Siema {
   }
 
   updateDots() {
-    for (let i = 0; i < this.dots.querySelectorAll('button').length; i++) {
+    for (let i = 0; i < this.dots.querySelectorAll('button').length; i += 1) {
       const addOrRemove = this.currentSlide === i ? 'add' : 'remove';
       this.dots.querySelectorAll('button')[i].classList[addOrRemove]('dots__item--active');
     }
@@ -35,4 +35,4 @@ const carousel = new SiemaWithDots({
   }
 });
 
-export { carousel };
+export default carousel;

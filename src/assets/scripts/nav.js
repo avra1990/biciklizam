@@ -9,4 +9,4 @@ function toggleShrink() {
   }
 }
 
-export { toggleShrink };
+export default toggleShrink;
