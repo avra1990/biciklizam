@@ -94,31 +94,31 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './src/assets/pages/index.html',
       inject: 'body',
       chunks: ['index'],
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './gallery.html',
+      template: './src/assets/pages/gallery.html',
       inject: 'body',
       chunks: ['gallery'],
       filename: 'gallery.html'
     }),
     new HtmlWebpackPlugin({
-      template: './o_nama.html',
+      template: './src/assets/pages/o_nama.html',
       inject: 'body',
       chunks: ['o_nama'],
       filename: 'o_nama.html'
     }),
     new HtmlWebpackPlugin({
-      template: './saveti.html',
+      template: './src/assets/pages/saveti.html',
       inject: 'body',
       chunks: ['saveti'],
       filename: 'saveti.html'
     }),
     new HtmlWebpackPlugin({
-      template: './zanimljivosti.html',
+      template: './src/assets/pages/zanimljivosti.html',
       inject: 'body',
       chunks: ['zanimljivosti'],
       filename: 'zanimljivosti.html'
