@@ -10,27 +10,28 @@ require('webpack-icons-installer');
 window.onscroll = function() {
   toggleShrink();
 };
+/*
+window.carousel = function() {
+  carousel();
+};
 
-// window.carousel = function() {
-//   carousel();
-// };
+window.openModal = function() {
+  openModal();
+};
 
-// window.openModal = function() {
-//   openModal();
-// };
+window.closeModal = function() {
+  closeModal();
+};
 
-// window.closeModal = function() {
-//   closeModal();
-// };
+window.dodajSlide = function() {
+  dodajSlide();
+};
 
-// window.dodajSlide = function() {
-//   dodajSlide();
-// };
+window.trenSlide = function() {
+  trenSlide();
+};
 
-// window.trenSlide = function() {
-//   trenSlide();
-// };
-
-// window.showSlide = function() {
-//   showSlide();
-// };
+window.showSlide = function() {
+  showSlide();
+};
+*/

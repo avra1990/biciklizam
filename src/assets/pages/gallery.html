@@ -2,19 +2,53 @@
 <html>
   <head> </head>
   <body>
-    <!-- 
-      ovo zamenjuje sav kod koji bi inace bio dupli
-      i ovo radis za sta god smatras da moze da pojednostavi html strukturu, 
-      odnosno gde god vidis sablon koji se ponavnja stavis ga u partials
-    -->
     <%= require('html-loader!../partials/nav.html') %>
 
     <div class="row">
       <div class="column">
-        <img src="slika1.jpg" onclick="openModal();trenSlide(1)" class="hover-shadow" />
+        <img
+          src="src=${require('../images/voznje/KSSpomenik1.jpg')}"
+          onclick="openModal();trenSlide(1)"
+          class="hover-shadow"
+        />
       </div>
       <div class="column">
-        <img src="slika2jpg.jpg" onclick="openModal();trenSlide(1)" class="hover-shadow" />
+        <img src="src=${require('../images/voznje/KSSpomenik2.jpg')}
+        onclick="openModal();trenSlide(2)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img
+          src="src=${require('../images/voznje/KSSpomenik4.jpg')}"
+          onclick="openModal();trenSlide(3)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img src="KSSpomenik4.jpg" onclick="openModal();trenSlide(4)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img src="KSTvrdjava.jpg" onclick="openModal();trenSlide(5)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img src="KSTvrdjava1.jpg" onclick="openModal();trenSlide(6)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img src="Lazarica1.jpg" onclick="openModal();trenSlide(7)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img src="Lazarica2.jpg" onclick="openModal();trenSlide(8)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img src="Lazarica3.jpg" onclick="openModal();trenSlide(9)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img src="Lisine1.jpg" onclick="openModal();trenSlide(10)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img src="LisineStrava.jpg" onclick="openModal();trenSlide(11)" class="hover-shadow" />
+      </div>
+      <div class="column">
+        <img src="Tvrdjava2.jpg" onclick="openModal();trenSlide(12)" class="hover-shadow" />
       </div>
       <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">%times</span>
