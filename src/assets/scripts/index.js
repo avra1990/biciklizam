@@ -1,7 +1,7 @@
 import 'bootstrap';
 import toggleShrink from './nav';
 // import carousel from './carousel';
-// import { openModal, closeModal, dodajSlide, trenSlide, showSlide } from './gallery';
+import initMap from './mapa';
 
 import '../styles/index.scss';
 
@@ -10,28 +10,13 @@ require('webpack-icons-installer');
 window.onscroll = function() {
   toggleShrink();
 };
+
+window.initMap = function() {
+  initMap();
+};
+
 /*
 window.carousel = function() {
   carousel();
-};
-
-window.openModal = function() {
-  openModal();
-};
-
-window.closeModal = function() {
-  closeModal();
-};
-
-window.dodajSlide = function() {
-  dodajSlide();
-};
-
-window.trenSlide = function() {
-  trenSlide();
-};
-
-window.showSlide = function() {
-  showSlide();
 };
 */
