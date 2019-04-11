@@ -1,7 +1,7 @@
 import 'bootstrap';
 import toggleShrink from './nav';
 // import carousel from './carousel';
-import initMap from './mapa';
+import { initMap, marker, isprazniTabelu } from './mapa';
 
 import '../styles/index.scss';
 
@@ -13,6 +13,14 @@ window.onscroll = function() {
 
 window.initMap = function() {
   initMap();
+};
+
+window.marker = function() {
+  marker();
+};
+
+window.isprazniTabelu = function() {
+  isprazniTabelu();
 };
 
 /*

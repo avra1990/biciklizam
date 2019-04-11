@@ -7,9 +7,10 @@ module.exports = {
   devtool: 'eval-cheap-module-source-map',
   entry: {
     index: './src/assets/scripts/index.js',
-    gallery: './src/assets/scripts/index.js',
     o_nama: './src/assets/scripts/index.js',
     saveti: './src/assets/scripts/index.js',
+    ture: './src/assets/scripts/ture.js',
+    mapa: './src/assets/scripts/index.js',
     zanimljivosti: './src/assets/scripts/index.js'
   },
   devServer: {
@@ -88,12 +89,6 @@ module.exports = {
       inject: true,
       chunks: ['index'],
       filename: 'index.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/assets/pages/gallery.html',
-      inject: true,
-      chunks: ['gallery'],
-      filename: 'gallery.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/assets/pages/o_nama.html',

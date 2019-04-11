@@ -1,16 +1,25 @@
+import { tabela } from '../../../../find_a_route/src/assets/funkcije';
+
 function initMap() {
   const lokacija = { lat: 44.226737, lng: 20.7953 };
-  const mapa = new google.maps.Mapa(document.getElementById('mapaID'), {
+  const map = new google.maps.Map(document.getElementById('mapaID'), {
     zoom: 5,
     center: lokacija
   });
 
-  const markiranje = new google.Markiranje({
+  const marker = new google.Marker({
     position: lokacija,
-    map: mapa
+    map
   });
 }
 
-src =
-  'https://www.google.com/maps/embed/v1/MODE?key=AIzaSyC_NDXDBm_TYbEbDX5wuijP3z_7uh_sk0I&callback=initMap';
-export { initMap };
+function isprazniTabelu() {
+  const redovi = document.getElementById('teloTabele');
+  if (redovi) {
+    while (redovi.hasChildNodes()) {
+      redovi.removeChild(redovi.firstChild());
+    }
+  }
+}
+
+export { initMap, marker, isprazniTabelu };
