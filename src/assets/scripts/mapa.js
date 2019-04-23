@@ -1,25 +1,25 @@
-import { tabela } from '../../../../find_a_route/src/assets/funkcije';
-
 function initMap() {
-  const lokacija = { lat: 44.226737, lng: 20.7953 };
+  const google = window.google;
+  const lokacijaA = new google.maps.LatLng(43.92469, 21.036381);
+  const lokacijaB = new google.maps.LatLng(43.959608, 21.246055);
+
   const map = new google.maps.Map(document.getElementById('mapaID'), {
-    zoom: 5,
-    center: lokacija
+    zoom: 10,
+    center: lokacijaA
   });
 
-  const marker = new google.Marker({
-    position: lokacija,
+  const markerA = new google.maps.Marker({
+    position: lokacijaA,
+    title: 'Marker',
+    label: 'M',
+    map
+  });
+  const markerB = new google.maps.Marker({
+    position: lokacijaB,
+    title: 'Marker B',
+    label: 'B',
     map
   });
 }
 
-function isprazniTabelu() {
-  const redovi = document.getElementById('teloTabele');
-  if (redovi) {
-    while (redovi.hasChildNodes()) {
-      redovi.removeChild(redovi.firstChild());
-    }
-  }
-}
-
-export { initMap, marker, isprazniTabelu };
+export { initMap };
