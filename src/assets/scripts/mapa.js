@@ -10,7 +10,7 @@ function initMap() {
 
   const markerA = new google.maps.Marker({
     position: lokacijaA,
-    title: 'Marker',
+    title: 'Marker A',
     label: 'M',
     map
   });
