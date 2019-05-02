@@ -4,18 +4,17 @@
     <title>Ture</title>
   </head>
   <body>
-    <% = require('html-loader!../partials/nav.html')%>
+    <%= require('html-loader!../partials/nav.html')%>
   </body>
   <div class="gazzete-catagory-posts-area">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-4">
           <div class="gazzete-single-catagory-post">
-            <a href="./krusevac_ture.html">
               <img src="${require('../images/Krusevac.jpg')}" />
             </a>
             <h1>
-              <a href="./krusevac_ture.html" class="font-pt">Krusevac</a>
+              <a href="krusevac_ture.html" class="font-pt">Krusevac</a>
             </h1>
             <div align="justify" class="style4">
               <p>
@@ -27,9 +26,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-4">
           <div class="gazzete-single-catagory-post">
-            <a href="krusevac_ture.html">
               <img src="${require('../images/Montreal.jpg')}" />
             </a>
             <h1>
@@ -42,8 +40,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-8"></div>
-        <div class="col-12 col-md-8"></div>
+        <div class="col-12 col-md-4"></div>
+        <div class="col-12 col-md-4"></div>
       </div>
     </div>
   </div>
