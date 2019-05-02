@@ -125,7 +125,7 @@ module.exports = {
       filename: 'krusevac_ture.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/assets/pages/zanimljivosti/zanimljivosti.html',
+      template: './src/assets/pages/zanimljivosti.html',
       inject: 'body',
       chunks: ['zanimljivosti'],
       filename: 'zanimljivosti.html'
