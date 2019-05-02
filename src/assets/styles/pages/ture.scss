@@ -1,0 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'Jagodina Krusevac'
+    'Jagodina Kragujevac'
+    'Jagodina Vrnjacka banja'
+    border-block-end 20px;
+}

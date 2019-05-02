@@ -109,6 +109,12 @@ module.exports = {
       filename: 'ture.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/assets/pages/krusevac_ture.html',
+      inject: true,
+      chunks: ['krusevac_ture'],
+      filename: 'krusevac_ture.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/assets/pages/mapa.html',
       inject: true,
       chunks: ['mapa'],

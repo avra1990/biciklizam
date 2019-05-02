@@ -14,7 +14,7 @@ module.exports = {
   devtool: 'source-map',
   entry: {
     index: './src/assets/scripts/index.js',
-    gallery: './src/assets/scripts/index.js',
+    ture: './src/assets/scripts/index.js',
     o_nama: './src/assets/scripts/index.js',
     saveti: './src/assets/scripts/index.js',
     zanimljivosti: './src/assets/scripts/index.js'
@@ -116,6 +116,12 @@ module.exports = {
       inject: 'body',
       chunks: ['saveti'],
       filename: 'saveti.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/assets/pages/ture.html',
+      inject: 'body',
+      chunks: ['ture'],
+      filename: 'ture.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/assets/pages/zanimljivosti.html',
