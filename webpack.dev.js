@@ -104,7 +104,7 @@ module.exports = {
       filename: 'saveti.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/assets/pages/ture/ture.html',
+      template: './src/assets/pages/ture.html',
       inject: true,
       chunks: ['ture'],
       filename: 'ture.html'
@@ -122,7 +122,7 @@ module.exports = {
       filename: 'mapa.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/assets/pages/zanimljivosti/zanimljivosti.html',
+      template: './src/assets/pages/zanimljivosti.html',
       inject: true,
       chunks: ['zanimljivosti'],
       filename: 'zanimljivosti.html'
