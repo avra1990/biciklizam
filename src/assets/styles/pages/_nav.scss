@@ -71,10 +71,8 @@
         background: $color-text-dark;
       }
     }
-    &.active {
-      &::before {
-        background: rgb(102, 15, 15);
-      }
+    &.active &::before {
+      background: rgb(102, 15, 15);
     }
   }
 }
