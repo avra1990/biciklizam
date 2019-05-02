@@ -100,12 +100,6 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/assets/pages/gallery.html',
-      inject: 'body',
-      chunks: ['gallery'],
-      filename: 'gallery.html'
-    }),
-    new HtmlWebpackPlugin({
       template: './src/assets/pages/o_nama.html',
       inject: 'body',
       chunks: ['o_nama'],
@@ -122,6 +116,12 @@ module.exports = {
       inject: 'body',
       chunks: ['ture'],
       filename: 'ture.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/assets/pages/krusevac_ture.html',
+      inject: 'body',
+      chunks: ['krusevac_ture'],
+      filename: 'krusevac_ture.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/assets/pages/zanimljivosti.html',

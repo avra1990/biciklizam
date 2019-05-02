@@ -9,9 +9,10 @@ module.exports = {
     index: './src/assets/scripts/index.js',
     o_nama: './src/assets/scripts/index.js',
     saveti: './src/assets/scripts/index.js',
-    ture: './src/assets/scripts/ture.js',
+    ture: './src/assets/scripts/index.js',
     mapa: './src/assets/scripts/index.js',
-    zanimljivosti: './src/assets/scripts/index.js'
+    zanimljivosti: './src/assets/scripts/index.js',
+    krusevac_ture: './src/assets/scripts/index.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist')
