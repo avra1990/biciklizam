@@ -1,50 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ture</title>
   </head>
   <body>
     <%= require('html-loader!../../partials/nav.html')%>
-  </body>
-  <div class="gazzete-catagory-posts-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="gazzete-single-catagory-post">
-            <a href="krusevac_ture.html">
-              <img src="${require('../../images/Krusevac.jpg')}" />
-            </a>
-            <h1>
-              <a href="krusevac_ture.html" class="font-pt">Krusevac</a>
-            </h1>
-            <div align="justify" class="style4">
-              <p>
-                >Prvo jaje je poklonio car Aleksandar III svojoj ženi Mariji Fjodorovnoj za Uskrs
-                1885.godine, a njoj se taj poklon toliko dopao da je nastavio sa poklanjanjem za
-                svaki sledeći praznik, a ovu tradiciju je nastavio i njegov naslednik Nikolaj II.
-              </p>
-              <br />
-            </div>
-          </div>
+    <div class="row">
+      <article class="col-12 col-md-4">
+        <a href="./krusevac_ture.html">
+          <img src="${require('../../images/Krusevac.jpg')}" />
+        </a>
+        <h1>
+          <a href="./krusevac_ture.html">Krusevac</a>
+        </h1>
+        <div class="style4">
+          <p>
+            >Prvo jaje je poklonio car Aleksandar III svojoj ženi Mariji Fjodorovnoj za Uskrs
+            1885.godine, a njoj se taj poklon toliko dopao da je nastavio sa poklanjanjem za svaki
+            sledeći praznik, a ovu tradiciju je nastavio i njegov naslednik Nikolaj II.
+          </p>
+          <br />
         </div>
-        <div class="col-12 col-md-8">
-          <div class="gazzete-single-catagory-post">
-            <a href="krusevac_ture.html">
-              <img src="${require('../../images/Montreal.jpg')}" />
-            </a>
-            <h1>
-              <a href="krusevac_ture.html" class="font-pt">Krusevac</a>
-            </h1>
-            <div align="justify" class="style4">
-              Prvo jaje je poklonio car Aleksandar III svojoj ženi Mariji Fjodorovnoj za Uskrs
-              1885.godine, a njoj se taj poklon toliko dopao da je nastavio sa poklanjanjem za svaki
-              sledeći praznik, a ovu tradiciju je nastavio i njegov naslednik Nikolaj II.
-            </div>
-          </div>
+      </article>
+      <article class="col-12 col-md-8">
+        <a href="./krusevac_ture.html">
+          <img src="${require('../../images/Montreal.jpg')}" />
+        </a>
+        <h1>
+          <a href="./krusevac_ture.html" class="font-pt">Krusevac</a>
+        </h1>
+        <div class="style4">
+          Prvo jaje je poklonio car Aleksandar III svojoj ženi Mariji Fjodorovnoj za Uskrs
+          1885.godine, a njoj se taj poklon toliko dopao da je nastavio sa poklanjanjem za svaki
+          sledeći praznik, a ovu tradiciju je nastavio i njegov naslednik Nikolaj II.
         </div>
-        <div class="col-12 col-md-8"></div>
-        <div class="col-12 col-md-8"></div>
-      </div>
+      </article>
     </div>
-  </div>
+  </body>
 </html>

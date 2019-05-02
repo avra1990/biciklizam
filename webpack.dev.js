@@ -110,7 +110,7 @@ module.exports = {
       filename: 'ture.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/assets/pages/ture/ture.html',
+      template: './src/assets/pages/ture/krusevac_ture.html',
       inject: true,
       chunks: ['krusevac_ture'],
       filename: 'krusevac_ture.html'
