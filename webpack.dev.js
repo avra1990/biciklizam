@@ -11,8 +11,7 @@ module.exports = {
     saveti: './src/assets/scripts/index.js',
     ture: './src/assets/scripts/index.js',
     mapa: './src/assets/scripts/index.js',
-    zanimljivosti: './src/assets/scripts/index.js',
-    krusevac_ture: './src/assets/scripts/index.js'
+    zanimljivosti: './src/assets/scripts/index.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist')
@@ -110,7 +109,7 @@ module.exports = {
       filename: 'ture.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/assets/pages/ture/krusevac_ture.html',
+      template: './src/assets/pages/ture/ture.html',
       inject: true,
       chunks: ['krusevac_ture'],
       filename: 'krusevac_ture.html'
