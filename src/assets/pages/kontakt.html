@@ -3,22 +3,22 @@
   <head></head>
   <body>
     <%= require('html-loader!../partials/nav.html') %>
+    <div class="container">
+      <form action="https://milosavramovic1990@gmail.com" method="POST">
+        Ime:<br />
+        <input name="ime" required /><br />
 
-    <div class='container'>
-        <label for='ime'>Ime</label>
-        <input type='text' id='ime'></br>
+        Prezime:<br />
+        <input name="ime" required /><br />
 
-        <label for='prezime'>Prezime</label>
-        <input type='text' id='ime'></br>
+        Email:<br />
+        <input name="email" type="email" required /><br />
 
-        <label for='e-mail'>E-mail</label>
-        <input type='text' id='e-mail'></br>
-
-        <label for='pitanje'>Pitanje</label>
-        <textarea name='pitanje' id='pitanje' style="height: 200px"></textarea></br>
-
-        <input type="submit" value="Posalji"></br>
-       
-      </div>
+        Ostavite poruku:<br />
+        <textarea name="poruka" cols="30" rows="10" required></textarea>
+        <p><b>*Sva polja su obavezna*.</b></p>
+        <button>Pošalji</button>
+      </form>
+    </div>
   </body>
 </html>

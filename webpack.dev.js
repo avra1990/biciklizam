@@ -9,10 +9,11 @@ module.exports = {
     index: './src/assets/scripts/index.js',
     o_nama: './src/assets/scripts/index.js',
     saveti: './src/assets/scripts/index.js',
+    blog: './src/assets/scripts/index.js',
     ture: './src/assets/scripts/index.js',
-    mapa: './src/assets/scripts/index.js',
     zanimljivosti: './src/assets/scripts/index.js',
-    krusevac_ture: './src/assets/scripts/index.js'
+    kontakt: './src/assets/scripts/index.js',
+    amaterizam: './src/assets/scripts/index.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist')
@@ -92,10 +93,10 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/assets/pages/o_nama.html',
+      template: './src/assets/pages/amaterizam.html',
       inject: true,
-      chunks: ['o_nama'],
-      filename: 'o_nama.html'
+      chunks: ['amaterizam'],
+      filename: 'amaterizam.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/assets/pages/saveti.html',
@@ -104,28 +105,28 @@ module.exports = {
       filename: 'saveti.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/assets/pages/blog.html',
+      inject: true,
+      chunks: ['blog'],
+      filename: 'blog.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/assets/pages/ture.html',
       inject: true,
       chunks: ['ture'],
       filename: 'ture.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/assets/pages/ture/krusevac_ture.html',
-      inject: true,
-      chunks: ['krusevac_ture'],
-      filename: 'krusevac_ture.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/assets/pages/mapa.html',
-      inject: true,
-      chunks: ['mapa'],
-      filename: 'mapa.html'
-    }),
-    new HtmlWebpackPlugin({
       template: './src/assets/pages/zanimljivosti.html',
       inject: true,
       chunks: ['zanimljivosti'],
       filename: 'zanimljivosti.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/assets/pages/kontakt.html',
+      inject: true,
+      chunks: ['kontakt'],
+      filename: 'kontakt.html'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
